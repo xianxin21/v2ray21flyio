@@ -74,5 +74,5 @@ printf '\e[33mNext, set app secrets and regions.\n\e[0m'
 flyctl secrets set UUID="${UUID}"
 flyctl regions set ${REGION}
 printf '\e[32mApp secrets and regions set success. Next, deploy the app.\n\e[0m'
-flyctl deploy --remote-only
+flyctl deploy --detach
 # flyctl status --app ${APP_NAME}
